@@ -4,7 +4,7 @@ HealBot is a command-line healthcare chatbot that predicts possible diseases bas
 
 🚀 Key Features
 
-Symptom-based disease prediction using Decision Tree Classifier
+Symptom-based disease prediction using Decision Tree Classifier.
 
 Secondary prediction for improved accuracy
 
