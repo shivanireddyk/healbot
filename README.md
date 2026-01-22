@@ -1,34 +1,33 @@
-🩺 HealBot – AI-Based Healthcare Chatbot
+# 🩺 HealBot – AI-Based Healthcare Chatbot
 
-HealBot is a command-line healthcare chatbot that predicts possible diseases based on user-reported symptoms. It uses machine learning (Decision Tree Classifier) trained on medical symptom data to provide predictions, descriptions, severity analysis, and precautionary advice.
+HealBot is a command-line healthcare chatbot that predicts possible diseases based on user-reported symptoms. It uses a machine learning model (Decision Tree Classifier) trained on medical symptom data to provide predictions, descriptions, severity analysis, and precautionary advice.
 
-🚀 Key Features
+---
 
-Symptom-based disease prediction using Decision Tree Classifier.
+## 🚀 Key Features
 
-Secondary prediction for improved accuracy
+- Symptom-based disease prediction using a Decision Tree Classifier  
+- Secondary prediction for improved accuracy  
+- Severity-based health risk evaluation  
+- Disease descriptions and precaution recommendations  
+- Interactive, user-friendly command-line interface  
+- Personalized input (name, age, gender)  
 
-Severity-based health risk evaluation
+---
 
-Disease descriptions and precaution recommendations
+## 🧠 Machine Learning Approach
 
-Interactive, user-friendly command-line interface
+- **Model:** Decision Tree Classifier (Scikit-learn)  
+- **Encoding:** Label Encoding for disease labels  
+- **Validation:** Train–test split and cross-validation  
+- **Input:** Binary symptom vector  
+- **Output:** Predicted disease(s) with explanation  
 
-Personalized input (name, age, gender)
+---
 
-🧠 Machine Learning Approach
+## 📂 Dataset Structure
 
-Model: Decision Tree Classifier (Scikit-learn)
-
-Encoding: Label Encoding for disease labels
-
-Validation: Train–test split and cross-validation
-
-Input: Binary symptom vector
-
-Output: Predicted disease(s) with explanation
-
-📂 Dataset Structure
+```text
 Data/
 │── Training.csv
 │── Testing.csv
@@ -37,53 +36,57 @@ MasterData/
 │── symptom_Description.csv
 │── symptom_severity.csv
 │── symptom_precaution.csv
+```
+## 🛠️ Technologies Used
 
-🛠️ Technologies Used
+- Python  
+- Pandas & NumPy  
+- Scikit-learn  
+- Regular Expressions  
+- CSV Data Handling  
 
-Python
+---
 
-Pandas & NumPy
+## ▶️ How to Run the Project
 
-Scikit-learn
+### 1️⃣ Clone the Repository
 
-Regular Expressions
-
-CSV Data Handling
-
-▶️ How to Run the Project
-1️⃣ Clone the Repository
+```bash
 git clone https://github.com/shivanireddyk/healbot.git
 cd healbot
+```
+### 2️⃣ Install Dependencies
 
-2️⃣ Install Dependencies
+```bash
 pip install pandas numpy scikit-learn pyttsx3
+```
+### 3️⃣ Run the Chatbot
 
-3️⃣ Run the Chatbot
+```bash
 python app.py
+```
+## 💬 How It Works
 
-💬 How It Works
+- User enters personal details (name, age, gender).  
+- User inputs symptoms (with pattern matching support).  
+- The model predicts disease using a decision tree.  
+- Severity is calculated based on symptom duration.  
+- Disease description and precautions are displayed.  
 
-User enters personal details (name, age, gender)
+---
 
-User inputs symptoms (with pattern matching support)
+## ⚠️ Disclaimer
 
-Model predicts disease using a decision tree
-
-Severity is calculated based on symptom duration
-
-Disease description and precautions are displayed
-
-⚠️ Disclaimer
-
-HealBot is intended only for educational and informational purposes.
+HealBot is intended only for educational and informational purposes.  
 It is not a substitute for professional medical advice, diagnosis, or treatment.
 
-📌 Future Enhancements
+---
 
-Web-based UI (Flask / Streamlit)
+## 📌 Future Enhancements
 
-Voice interaction
+- Web-based UI (Flask / Streamlit)  
+- Voice interaction  
+- Improved model accuracy using ensemble methods  
+- Deployment on cloud platforms  
 
-Improved model accuracy using ensemble methods
 
-Deployment on cloud platforms
